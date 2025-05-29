@@ -1,0 +1,182 @@
+/*=========================================
+Anomaly Generatorができること
+======================================== */
+.s_feature {
+    .container_lg {
+        @include media(md) {
+            width: 100%;
+        }
+    }
+    .feature_title {
+        background: $color-7;
+        padding: 1.875rem 0;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            left: calc(50% - 2.5rem);
+            bottom: -1.1875rem;
+            width: 0;
+            height: 0;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-top: 20px solid $color-7;
+        }
+        .s_title {
+            color: white;
+            margin: 0;
+        }
+    }
+    .feature_summary {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        column-gap: 4rem;
+        @include media(md) {
+            display: block;
+        }
+        .feature_summary_item {
+            @include media(md) {
+                width: 100%;
+                & + .feature_summary_item {
+                    margin-top: 1rem;
+                }
+            }
+            h3 {
+                font-size: 1.6rem;
+                line-height: 1;
+                margin-top: 1rem;
+                color: $color-3;
+                text-align: center;
+                @include media(md) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 2rem;
+                }
+                span {
+                    font-family: $font_robot;
+                    color: $color-7;
+                    font-size: 4.375rem;
+                    line-height: 1;
+                    display: block;
+                    text-align: center;
+                    @include media(md) {
+                        display: inline;
+                        margin-right: 1rem;
+                    }
+                }
+            }
+            p {
+                margin-top: 1rem;
+                font-size: 1rem;
+                color: $color-7;
+                text-align: center;
+                @include media(md) {
+                    font-size: 1.25rem;
+                }
+            }
+            figure {
+                width: 12.5rem;
+                margin: 1rem auto 0;
+            }
+        }
+    }
+    .features {
+        .feature_item {
+            position: relative;
+            margin-top: 4.375rem;
+            @include media(md) {
+                margin-top: 2rem;
+            }
+            .feature_item_media {
+                width: 50%;
+                margin-left: auto;
+                @include media(md) {
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+            .feature_item_text {
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width: calc(50% + 50px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include media(md) {
+                    position: static;
+                    width: calc(100% - 4rem);
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .feature_item_text_wrap {
+                    background: white;
+                    padding: 50px 2.5rem 2.5rem;
+                    position: relative;
+                    box-shadow: 0 0 0.5rem rgba(0,0,0,0.25);
+                    @include media(md) {
+                        padding: 2rem;
+                        margin-top: -2rem;
+                    }
+                    .feature_item_num {
+                        font-size: 5rem;
+                        color: $color-7;
+                        line-height: 1;
+                        left: 2.5rem;
+                        top: -2.5rem;
+                        position: absolute;
+                        font-family: $font_robot;
+                        @include media(md) {
+                            position: static;
+                        }
+                    }
+                    .feature_item_title {
+                        font-size: 2rem;
+                        color: $color-3;
+                    }
+                    .feature_item_desc {
+                        font-size: 1.125rem;
+                        margin-top: 1.25rem;
+                    }
+                    .feature_item_comment {
+                        color: $color-7;
+                        font-size: 0.875rem;
+                        margin-top: 0.625rem;
+                    }
+                    .feature_item_license {
+                        display: inline-block;
+                        font-size: 1rem;
+                        padding: 0.5rem;
+                        background: $color_f5;
+                        color: black;
+                        margin-top: 1rem;
+                        line-height: 1;
+                        &--end {
+                            background: $color_8;
+                            color: white;
+                            font-weight: 700;
+                        }
+                        &--going {
+                            background: $color_7;
+                            color: white;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+            &--reserve {
+                .feature_item_media {
+                    margin-left: 0;
+                    margin-right: auto;
+                }
+                .feature_item_text {
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+    }
+}

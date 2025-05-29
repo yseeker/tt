@@ -1,0 +1,27 @@
+/*=========================================
+導入実績
+======================================== */
+.s_experience {
+    padding: 2.5rem 0;
+    .experience_title_wrap {
+        border-bottom: 1px solid #DCDCDC;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .experience_title {
+        font-size: 1rem;
+        color: white;
+        display: inline-block;
+        padding: 0.5rem 1.5rem;
+        border-top-left-radius: 0.3125rem;
+        border-top-right-radius: 0.3125rem;
+        background: $color_7;
+        margin: 0;
+        @include media(md) {
+            font-size: 1.25rem;
+        }
+    }
+    .experience_media {
+        margin-top: 1.25rem;
+    }
+}

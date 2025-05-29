@@ -1,0 +1,88 @@
+/*=========================================
+精度向上実績
+======================================== */
+.s_voice {
+    .voice_slider {
+        position: relative;
+        @include media(md) {
+            width: calc(100% - 4rem);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .slick_right {
+            position: absolute;
+            right: -3rem;
+            width: 1rem;
+            height: 2rem;
+            top: calc(50% - 1rem);
+            transform: scaleX(-1);
+            cursor: pointer;
+        }
+        .slick_left {
+            position: absolute;
+            left: -3rem;
+            width: 1rem;
+            height: 2rem;
+            top: calc(50% - 1rem);
+            cursor: pointer;
+        }
+        .voice_item {
+            padding-bottom: 0.25rem;
+            cursor: pointer;
+            .voice_media {
+                position: relative;
+                &:after {
+                    content: "";
+                    padding-top: 62.5%;
+                    display: block;
+                }
+                img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+            .voice_text {
+                width: calc(100% - 2.5rem);
+                margin: -2.8rem auto 0;
+                padding: 1.25rem;
+                background: white;
+                border-radius: 0.325rem;
+                position: relative;
+                box-shadow: 0 0 0.25rem rgba(0,0,0,0.25);
+                @include media(md) {
+                    width: calc(100% - 2rem);
+                    margin-top: -3rem;
+                    border-radius: 0.5rem;
+                }
+                .voice_title {
+                    font-size: 1rem;
+                    color: $color-7;
+                    @include media(md) {
+                        font-size: 1.5rem;
+                    }
+                }
+                .voice_desc {
+                    font-size: 0.875rem;
+                    margin-top: 0.5rem;
+                    @include media(md) {
+                        font-size: 1.25rem;
+                    }
+                }
+                .voice_comment {
+                    font-size: 0.75rem;
+                    color: $color-7;
+                    margin-top: 0.5rem;
+                    padding-top: 0.5rem;
+                    border-top: 1px solid $color-7;
+                    @include media(md) {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+    }
+}

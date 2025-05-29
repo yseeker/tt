@@ -1,0 +1,16 @@
+@function media-condition($c) {
+  $condMap: (
+	// 1200px以下
+	"xl": "(max-width: 1200px)",
+	// 769px以上
+	"md-over": "(min-width: 769px)",
+	// 768px以下
+	"md": "(max-width: 768px)",
+  );
+  @return map-get( $condMap, $c );
+}
+
+// The mdia mixin
+@mixin media($arg) {
+  @media #{media-condition($arg)}  { @content; }
+}

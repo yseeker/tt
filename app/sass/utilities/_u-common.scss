@@ -1,0 +1,111 @@
+/*=========================================
+Common Class
+======================================== */
+.s_padding {
+    padding: 4.375rem 0;
+    @include media(md) {
+        padding: 3rem 0;
+    }
+}
+.s_title {
+    font-size: 2rem;
+    color: $color-3;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2.5rem;
+    @include media(md) {
+        margin-bottom: 1.5rem;
+    }
+}
+.s_main {
+    padding: 8rem 0 4rem;
+    @include media(md) {
+        padding: 7rem 0 3rem;
+    }
+}
+.container {
+	width: 75rem;
+    max-width: 100%;
+    margin: 0 auto;
+    @include media(md) {
+        width: calc(100% - 4rem);
+    }
+}
+.container_lg {
+	width: 62.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+    @include media(md) {
+        width: calc(100% - 4rem);
+    }
+}
+.container_md {
+	width: 57.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+    @include media(md) {
+        width: calc(100% - 4rem);
+    }
+}
+.container_sm {
+	width: 50rem;
+    max-width: 100%;
+    margin: 0 auto;
+    @include media(md) {
+        width: calc(100% - 4rem);
+    }
+}
+.ReactModal__Overlay {
+    z-index: 100;
+    .ReactModal__Content {
+        inset: 0 !important;
+        border: 0 !important;
+        background: rgba(255,255,255,0.7) !important; 
+        display: flex !important;
+        justify-content: center !important;;
+        align-items: center !important;
+        padding: 0 !important;
+        .voice_modal {
+            width: 50rem;
+            max-width: calc(100% - 4rem);
+            padding: 3rem 2rem 2rem;
+            position: relative;
+            border: 1px solid rgb(204, 204, 204);
+            border-radius: 0.5rem;
+            background: white;
+            .voice_modal_close {
+                position: absolute;
+                right: 1rem;
+                top: 1rem;
+                width: 1.5rem;
+                height: 1.5rem;
+                cursor: pointer;
+            }
+            .voice_modal_title {
+                font-size: 2rem;
+                line-height: 1.4;
+            }
+            .voice_modal_desc {
+                font-size: 1.25rem;
+                margin-top: 0.5rem;
+                @include media(md) {
+                    font-size: 1.5rem;
+                }
+            }
+            .voice_modal_comment {
+                font-size: 1rem;
+                margin-top: 0.5rem;
+                color: $color-7;
+                @include media(md) {
+                    font-size: 1.25rem;
+                }
+            }
+            .voice_modal_media {
+                margin-top: 1rem;
+                @include media(md) {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}

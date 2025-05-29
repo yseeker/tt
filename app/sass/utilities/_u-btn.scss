@@ -1,0 +1,75 @@
+/*=========================================
+Button
+======================================== */
+.btn_sm {
+	width: 8.125rem;
+	height: 2.1875rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 99999px;
+	font-size: 0.8125rem;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid black;
+	@include media(md) {
+		width: calc(50% - 1rem);
+		height: 4rem;
+		border-radius: 99999px;
+		font-size: 1.25rem;
+	}
+}
+.btn_md {
+	width: 15.9375rem;
+	height: 3.4375rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 99999px;
+	font-size: 1.125rem;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid black;
+	@include media(md) {
+		width: 100%;
+		font-size: 1.5rem;
+		height: 5rem;
+	}
+}
+.btn_lg {
+	width: 22.5rem;
+	height: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 99999px;
+	font-size: 1.875rem;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid black;
+	@include media(md) {
+		width: 100%;
+		font-size: 1.5rem;
+		height: 5rem;
+	}
+}
+.btn_b {
+	color: white;
+	background: black;
+}
+.btn_w {
+	color: black;
+	background: white;
+}
+.color-3 {
+	color: $color-3;
+}
+.color-7 {
+	color: $color-7;
+}
+.color-d9 {
+	color: $color-d9;
+}
+.color-f5 {
+	color: $color-f5;
+}

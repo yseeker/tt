@@ -1,0 +1,69 @@
+/*!
+Theme Name: Doctor DX LP
+Theme URI: http://underscores.me/
+Author: X Umbrella Inc.
+Author URI: https://x-umbrella.co.jp/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: doctor-dx-lp
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Doctor DX LP is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/**
+ * 1. Base
+ * 2. Utilities
+ * 3. Sections
+ */
+
+/*=========================================
+1. Base
+======================================== */
+@import "base/b-variables";
+@import "base/b-mixin";
+@import "base/b-normalize";
+
+/*=========================================
+2. Utilities
+======================================== */
+@import "utilities/u-common";
+@import "utilities/u-font";
+@import "utilities/u-img";
+@import "utilities/u-color";
+@import "utilities/u-btn";
+@import "utilities/u-bg";
+@import "utilities/u-hide";
+
+
+/*=========================================
+3. Sections
+======================================== */
+@import "sections/s-header";
+@import "sections/s-footer";
+@import "sections/s-fv";
+@import "sections/s-experience";
+@import "sections/s-onayami";
+@import "sections/s-solution";
+@import "sections/s-feature";
+@import "sections/s-function";
+@import "sections/s-product";
+@import "sections/s-bad";
+@import "sections/s-voice";
+@import "sections/s-new";
+@import "sections/s-faq";
+@import "sections/s-flow";
+@import "sections/s-contact";
+@import "sections/s-isms";
+@import "sections/s-terms";

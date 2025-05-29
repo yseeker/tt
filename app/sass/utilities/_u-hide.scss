@@ -1,0 +1,13 @@
+/*=========================================
+Hide
+======================================== */
+.hide_pc {
+    @include media(md-over) {
+        display: none;
+    }
+}
+.hide_sp {
+    @include media(md) {
+        display: none;
+    }
+}

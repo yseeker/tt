@@ -1,0 +1,128 @@
+/*=========================================
+課題
+======================================== */
+.onayami {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        left: calc(50% - 2.5rem);
+        bottom: -1.1875rem;
+        width: 0;
+        height: 0;
+        border-left: 2.5rem solid transparent;
+        border-right: 2.5rem solid transparent;
+        border-top: 1.25rem solid $color-f5;
+        @include media(md) {
+            left: calc(50% - 3rem);
+            bottom: -1.45rem;
+            border-left: 3rem solid transparent;
+            border-right: 3rem solid transparent;
+            border-top: 1.45rem solid #F5F5F5;
+        }
+    }
+    .onayami_title {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .s_title {
+            padding-bottom: 1.375rem;
+            &:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 1.375rem;
+                width: 100%;
+                background: url(/img/onayami_title_under.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    }
+    .onayami_main {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @include media(md) {
+            display: block;
+        }
+        .onayami_media {
+            width: 22.5rem;
+            @include media(md) {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .onayami_text {
+            width: 28.75rem;
+            position: relative;
+            @include media(md) {
+                width: 100%;
+                margin-top: 2rem;
+            }
+            .onayami_text_mark {
+                position: absolute;
+                left: -3.125rem;
+                top: 0.9375rem;
+                width: 4.375rem;
+                @include media(md) {
+                    position: absolute;
+                    left: 1rem;
+                    top: -2rem;
+                    width: 4.375rem;
+                    transform: rotate(180deg);
+                }
+            }
+            ul {
+                padding: 0.625rem;
+                margin: 0;
+                border-radius: .3125rem;
+                background: $color-d9;
+                list-style: none;
+                @include media(md) {
+                    padding: 1.5rem;
+                    border-radius: 0.5rem;
+                }
+                li {
+                    margin: 0;
+                    padding: 0.9375rem 0.9375rem 0.9375rem 3rem;
+                    position: relative;
+                    background: white;
+                    font-size: 1.125rem;
+                    position: relative;
+                    @include media(md) {
+                        padding: 1.2rem 1.2rem 1.2rem 4rem;
+                        font-size: 1.5rem;
+                    }
+                    &:before {
+                        content: "";
+                        background-image: url(/img/icon_check.svg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        display: block;
+                        width: 2rem;
+                        height: 1.5rem;
+                        position: absolute;
+                        left: 0.75rem;
+                        top: calc(50% - 0.75rem);
+                        @include media(md) {
+                            width: 2.5rem;
+                            height: 2rem;
+                            left: 1rem;
+                            top: calc(50% - 1rem);
+                        }
+                    }
+                    & + li {
+                        margin-top: 0.625rem;
+                    }
+                }
+            }
+        }
+    }
+}

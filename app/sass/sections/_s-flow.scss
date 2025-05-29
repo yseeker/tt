@@ -1,0 +1,83 @@
+/*=========================================
+ご利用までの流れ
+======================================== */
+.s_flow {
+    .flows {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @include media(md) {
+            display: block;
+        }
+        .flow_item {
+            width: 12.5rem;
+            position: relative;
+            @include media(md) {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                width: 100%;
+            }
+            &:not(:first-child) {
+                @include media(md) {
+                    margin-top: 2rem;
+                }
+                &:before {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                    left: -2.5rem;
+                    top: calc(50% - 1.25rem);
+                    border-top: 1.25rem solid transparent;
+                    border-left: 1.25rem solid $color-d9;
+                    border-bottom: 1.25rem solid transparent;
+                    @include media(md) {
+                        left: calc(50% - 2.5rem);
+                        top: -1rem;
+                        width: 0;
+                        height: 0;
+                        border-left: 2.5rem solid transparent;
+                        border-right: 2.5rem solid transparent;
+                        border-top: 1.25rem solid $color-d9;
+                    }
+                }
+            }
+            .flow_item_media {
+                width: 6.25rem;
+                margin: auto;
+                @include media(md) {
+                    width: 7rem;
+                    margin: 0;
+                }
+            }
+            .flow_item_text {
+                margin-top: 0.5rem;
+                @include media(md) {
+                    width: calc(100% - 7rem);
+                    padding-left: 2rem;
+                }
+                h3 {
+                    font-size: 1.25rem;
+                    text-align: center;
+                    color: $color-3;
+                    @include media(md) {
+                        font-size: 1.5rem;
+                        text-align: left;
+                        color: $color-7;
+                    }
+                }
+                p {
+                    font-size: .875rem;
+                    margin-top: 0.5rem;
+                    text-align: center;
+                    @include media(md) {
+                        font-size: 1.25rem;
+                        text-align: left;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

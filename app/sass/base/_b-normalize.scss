@@ -1,0 +1,223 @@
+@charset "UTF-8";
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+html, body {
+  color: black;
+  font-family: $font_notosansjp;
+  line-height: 1.6;
+  text-align: justify;
+  -webkit-text-size-adjust: 100%;
+  font-size: 16px;
+  font-weight: $weight_normal;
+  position: relative;
+  margin: auto;
+  letter-spacing: 0;
+  @include media(xl) {
+	font-size: calc(100vw / 1200 * 16);
+  }
+  @include media(md) {
+	font-size: calc(100vw / 37.5);
+  }
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-radius: 3px;
+	color: rgba(0, 0, 0, 0.8);
+	line-height: 1;
+	padding: 0.6em 1em 0.4em;
+
+	&:hover {
+	}
+
+	&:active,
+	&:focus {
+	}
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: black;
+	border-radius: 3px;
+	padding: 3px;
+
+	&:focus {
+		color: black;
+	}
+}
+
+select {
+}
+
+textarea {
+	width: 100%;
+}
+hr {
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+a {
+	color: black;
+
+	&:visited {
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+ul,
+ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+img {
+	height: auto; // Make sure images are scaled correctly.
+	max-width: 100%; // Adhere to container width.
+}
+
+figure {
+	margin: 0; // Extra wide images within figure tags don't overflow the content area.
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+p {
+	margin-bottom: 1.5em;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+abbr,
+acronym {
+	cursor: help;
+}
+
+mark,
+ins {
+	background: white;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: black;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+
+a,a:hover {
+  text-decoration: none;
+}
+
+img {
+	height: auto; 
+	max-width: 100%;
+}
+
+h1, h2, h3, h4, h5,  h6, p {
+  margin: auto;
+}
+
+p, dt, dd {
+  overflow-wrap: break-word;
+}

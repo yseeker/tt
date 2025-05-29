@@ -1,0 +1,61 @@
+/*=========================================
+フッダー
+======================================== */
+.s_footer {
+    padding: 2.5rem 0;
+    background: #EDEDED;
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @include media(md) {
+            display: block;
+        }
+        .footer_logo {
+            display: block;
+            width: 18.75rem;
+            position: relative;
+            cursor: pointer;
+            @include media(md) {
+                width: 25rem;
+                margin: auto;
+            }
+        }
+        .footer_main {
+            display: block;
+            @include media(md) {
+                margin-top: 1rem;
+            }
+            .footer_menu {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 1.875rem;
+                margin: 0;
+                padding: 0;
+                li {
+                    font-size: 0.85rem;
+                    display: block;
+                    @include media(md) {
+                        font-size: 1.25rem;
+                        line-height: 1;
+                    }
+                    a {
+                        display: block;
+                    }
+                }
+            }
+            .copyright {
+                font-size: 0.875rem;
+                margin-top: 1.15rem;
+                text-align: right;
+                @include media(md) {
+                    font-size: 1rem;
+                    text-align: center;
+                    margin-top: 1rem;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+}

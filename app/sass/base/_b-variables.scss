@@ -1,0 +1,33 @@
+/*=========================================
+フォント
+======================================== */
+@font-face {
+    font-family: "RobotoXXX";
+    src: url(/font/Roboto-Bold.ttf);
+}
+$font_notosansjp: "Noto Sans JP", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font_robot: "RobotoXXX", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$weight_bold: 700;
+$weight_normal: 500;
+$weight_light: 300;
+
+
+/*=========================================
+カラー
+======================================== */
+$color_3: #333;
+$color_7: #444444;
+$color_8: #8e7201;
+$color_d9: #D9D9D9;
+$color_f5: #F5F5F5;
+$color_gold: #af8c00;
+
+
+/*=========================================
+サイズ
+======================================== */
+$font_h2: 2rem;
+$font_h3: 1.5625rem;
+$font_md: 1.125rem;
+$font_text: 1rem;

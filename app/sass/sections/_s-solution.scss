@@ -1,0 +1,39 @@
+/*=========================================
+解決
+======================================== */
+.s_solution {
+    .solution_main {
+        @include media(md) {
+            display: block;
+        }
+        .solution_mark {
+            display: none;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 13.125rem;
+        }
+        .solution_media {
+            margin-top: 1rem;
+            .solution_media_desc {
+                font-size: 0.875rem;
+                text-align: center;
+                margin-top: 1rem;
+            }
+        }
+        .solution_text {
+            h3 {
+                font-size: 1.5625rem;
+                text-align: center;
+            }
+            p {
+                font-size: 1.125rem;
+                margin-top: 0.5rem;
+                text-align: center;
+                @include media(md) {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+/*=========================================
+ファストビュー
+======================================== */
+.fv {
+  padding: 9.375rem 0 5rem;
+  background-image: url(/img/bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include media(md) {
+    padding: 7rem 0 4rem;
+  }
+  .fv_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media(md) {
+      display: block;
+    }
+  }
+  .fv_text {
+    width: calc(100% - 40.9375rem);
+    @include media(md) {
+      width: 100%;
+    }
+    .fv_sub {
+      font-size: 1.875rem;
+      margin: 0;
+      position: relative;
+      line-height: 1;
+      @include media(md) {
+        text-align: center;
+        font-size: 1.7rem;
+      }
+      span {
+        display: inline-block;
+      }
+      .ja {
+        position: relative;
+        border-left: 0.2rem solid black;
+        margin-left: 0.2rem;
+        padding-left: 0.4rem;
+      }
+    }
+    .fv_title {
+      font-size: 2.9375rem;
+      margin: 0;
+      margin-top: 1.0625rem;
+      font-weight: $weight_bold;
+      @include media(md) {
+        text-align: center;
+        font-size: 2.7rem;
+      }
+    }
+    .fv_desc {
+      font-size: 1.5rem;
+      margin: 0;
+      margin-top: 1.25rem;
+    }
+    .fv_action {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1.875rem;
+      @include media(md) {
+        flex-direction: column;
+        row-gap: 1.5rem;
+      }
+    }
+  }
+  .fv_media {
+    width: 40rem;
+    @include media(md) {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }
+}

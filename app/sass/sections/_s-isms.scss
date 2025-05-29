@@ -1,0 +1,31 @@
+/*=========================================
+ISMS
+======================================== */
+.s_isms {
+    padding: 2rem 0;
+    @include media(md) {
+        padding: 1rem 0;
+    }
+    .isms {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .isms_media {
+            width: 14rem;
+            @include media(md) {
+                width: 12rem;
+            }
+        }
+        .isms_text {
+            width: 20rem;
+            padding-left: 2rem;
+            color: $color_7;
+            font-size: 1rem;
+            margin: 0;
+            @include media(md) {
+                width: calc(100% - 12rem);
+                padding-left: 1rem;
+            }
+        }
+    }
+}
